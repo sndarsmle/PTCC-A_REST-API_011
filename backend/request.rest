@@ -1,0 +1,26 @@
+GET http://localhost:5000/notes
+
+### READ
+GET http://localhost:5000//notes/1
+
+### CREATE
+POST http://localhost:5000/add-notes
+Content-Type: application/json
+
+{
+    "title": "Keunikan Kucing",
+    "content": "Salah satu keunikan kucing adalah kemampuan mereka untuk berjalan dengan Langkah silang, yaitu cara berjalan yang khas dengan menggerakkan kaki kanan depan dan kaki kiri belakang secara bersamaan Salah satu keunikan kucing adalah kemampuan mereka untuk berjalan dengan Langkah silang, yaitu cara berjalan yang khas dengan menggerakkan kaki kanan depan dan kaki kiri belakang secara bersamaan"
+}
+
+### UPDATE
+PUT http://localhost:5000/edit-notes/3
+Content-Type: application/json
+
+{
+    "title": "Shell Better Than Pertamina",
+    "content": "Shell adalah perusahaan minyak dan gas asal Belanda yang berdiri sejak tahun 1907. Shell memiliki kualitas bensin yang lebih baik daripada Pertamina. Namun sayangnya di Jogja tidak ada SPBU Shell" 
+}
+
+### DELETE
+DELETE http://localhost:5000/delete-notes/4
+```
