@@ -59,7 +59,9 @@ DB_PASS=
 DB_HOST=localhost
 DB_DIALECT=mysql
 ```
-- Jalankan server backend dengan **Nodemon**:
+- Jalankan server backend dengan **Nodemon**
+```
+```
 Backend akan berjalan di `http://localhost:5000`
 
 ### **3️⃣ Setup Frontend**
