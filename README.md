@@ -1,7 +1,7 @@
 # PTCC-A REST API 011 - Notes App
 
 ## 📌 Deskripsi
-PTCC-A REST API 011 adalah aplikasi pencatatan berbasis **MySQL, Express, React, Node.js** dengan styling menggunakan **Bulma CSS**. Aplikasi ini memungkinkan pengguna untuk menambahkan, mengedit, dan menghapus catatan.
+Ini merupakan project aplikasi notes berbasis **MySQL, Express, React, Node.js** dengan styling menggunakan **Bulma CSS**. Aplikasi ini memungkinkan pengguna untuk menambahkan, mengedit, dan menghapus catatan.
 
 ## 🚀 Teknologi yang Digunakan
 - **Frontend:** React.js + Vite
@@ -40,7 +40,7 @@ PTCC-A REST API 011 adalah aplikasi pencatatan berbasis **MySQL, Express, React,
 
 ### **1️⃣ Clone Repository**
 ```sh
-git clone https://github.com/username/PTCC-A_REST-API_011.git
+git clone https://github.com/sndarsmle/PTCC-A_REST-API_011.git
 cd PTCC-A_REST-API_011
 ```
 
@@ -60,7 +60,6 @@ DB_HOST=localhost
 DB_DIALECT=mysql
 ```
 - Jalankan server backend dengan **Nodemon**:
-
 Backend akan berjalan di `http://localhost:5000`
 
 ### **3️⃣ Setup Frontend**
