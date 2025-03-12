@@ -8,8 +8,8 @@ POST http://localhost:5000/add-notes
 Content-Type: application/json
 
 {
-    "title": "Keunikan Kucing",
-    "content": "Salah satu keunikan kucing adalah kemampuan mereka untuk berjalan dengan Langkah silang, yaitu cara berjalan yang khas dengan menggerakkan kaki kanan depan dan kaki kiri belakang secara bersamaan Salah satu keunikan kucing adalah kemampuan mereka untuk berjalan dengan Langkah silang, yaitu cara berjalan yang khas dengan menggerakkan kaki kanan depan dan kaki kiri belakang secara bersamaan"
+    "title": "Test Cloud",
+    "content": "Berhasil migrasi DB ke cloud"
 }
 
 ### UPDATE
