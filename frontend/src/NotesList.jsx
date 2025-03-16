@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { FaEdit, FaTrash } from "react-icons/fa"; 
+import { BASE_URL } from "./utils";
 
 function NotesList({ onCreate, onEdit, onDelete }) {
   const [notes, setNotes] = useState([]);
@@ -11,7 +12,7 @@ function NotesList({ onCreate, onEdit, onDelete }) {
 
   const fetchNotes = async () => {
     try {
-      const response = await axios.get("http://localhost:5000/notes");
+      const response = await axios.get("${BASE_URL}/notes");
       setNotes(response.data.data);
     } catch (error) {
       console.error("Gagal mengambil data:", error);

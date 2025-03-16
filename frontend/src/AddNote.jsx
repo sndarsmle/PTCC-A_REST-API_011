@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 import { FaArrowLeft } from "react-icons/fa";
+import { BASE_URL } from "./utils";
 
 function AddNote({ onNoteAdded, editNote }) {
   const [title, setTitle] = useState("");
@@ -17,9 +18,9 @@ function AddNote({ onNoteAdded, editNote }) {
     e.preventDefault();
     try {
       if (editNote) {
-        await axios.put(`http://localhost:5000/edit-notes/${editNote.id}`, { title, content });
+        await axios.put(`${BASE_URL}/edit-notes/${editNote.id}`, { title, content });
       } else {
-        await axios.post("http://localhost:5000/add-notes", { title, content });
+        await axios.post("${BASE_URL}/add-notes", { title, content });
       }
       setTitle("");
       setContent("");

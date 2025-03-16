@@ -2,6 +2,7 @@ import { useState } from "react";
 import NotesList from "./NotesList";
 import AddNote from "./AddNote";
 import axios from "axios";
+import { BASE_URL } from "./utils";
 
 function App() {
   const [refresh, setRefresh] = useState(false);
@@ -27,7 +28,7 @@ function App() {
   const handleDeleteNote = async (id) => {
     if (window.confirm("Apakah Anda yakin ingin menghapus catatan ini?")) {
       try {
-        await axios.delete(`http://localhost:5000/delete-notes/${id}`);
+        await axios.delete(`${BASE_URL}/delete-notes/${id}`);
         handleNoteAdded();
       } catch (error) {
         console.error("Gagal menghapus catatan:", error);
